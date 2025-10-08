@@ -114,7 +114,7 @@ List Items	/items	list.jsp	list()
 Add Item	/item-add	add.jsp	add()
 Edit Item	/item-update	edit.jsp	update()
 Delete Item	/item-delete	list.jsp	delete()
-📸 Screenshots in githublink
+📸 Screenshots (optional)
 
 (You can insert screenshots here later from your running app — e.g., list page, add page, update page.)
 
@@ -132,6 +132,10 @@ Tested on Tomcat 9 + JDK 17 and Windows 11.
 
 Satya Srinath
 
-🌐 GitHub link:https://github.com/satya66123/java_Struct2_crud.git
+🌐 GitHub Profile
 
-✉️ Email: satyasrinath666@gmail.com
+✉️ Email: satya srinath6 @gmail.com
+
+Would you like me to include a database.sql sample and short JDBC code snippet for your ItemAction.java in the same README (for better GitHub visibility)?
+
+10000 chars

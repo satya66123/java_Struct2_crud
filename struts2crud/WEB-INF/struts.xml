@@ -1,0 +1,40 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <constant name="struts.devMode" value="false" />
+
+    <package name="default" namespace="/" extends="struts-default">
+
+        <!-- List items -->
+        <action name="items" class="com.example.action.ItemAction" method="list">
+            <result name="success">/jsp/list.jsp</result>
+        </action>
+
+        <!-- Add form -->
+        <action name="item-create" class="com.example.action.ItemAction" method="create">
+            <result name="create">/jsp/form.jsp</result>
+        </action>
+
+        <!-- Save item -->
+        <action name="item-save" class="com.example.action.ItemAction" method="save">
+            <result name="redirectList" type="redirectAction">items</result>
+        </action>
+
+        <!-- Edit item -->
+        <action name="item-edit" class="com.example.action.ItemAction" method="edit">
+            <result name="edit">/jsp/form.jsp</result>
+        </action>
+
+        <!-- Delete item -->
+        <action name="item-delete" class="com.example.action.ItemAction" method="delete">
+            <result name="redirectList" type="redirectAction">items</result>
+        </action>
+        
+        <!-- Update item-->
+        <action name="item-update" class="com.example.action.ItemAction" method="update">
+            <result name="redirectList" type="redirectAction">items</result>
+        </action>
+        
+
+    </package>
+</struts>
